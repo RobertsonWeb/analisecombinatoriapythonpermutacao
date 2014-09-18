@@ -16,5 +16,6 @@ def experimento(qtd_amarelas=None, qtd_vermelhas=None, qtd_azuis=None, qtd_verde
 	return render_template('experimento.html', titulo=u'Título teste', qtd_amarelas=qtd_amarelas, qtd_vermelhas=qtd_vermelhas, qtd_azuis=qtd_azuis, qtd_verdes=qtd_verdes, total_bolas=total_bolas, total_tubos=total_tubos, tubos=tubos)
 
 if __name__ == "__main__":
-    app.debug = True
-    app.run()
+	port = int(os.environ.get("PORT", 5000))
+	app.debug = True
+	app.run(host='0.0.0.0', port=port)
