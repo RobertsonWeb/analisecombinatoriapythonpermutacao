@@ -1,1 +1,1 @@
-web: gunicorn home:app --log-file=-
+web: gunicorn home:app --log-file=python-a-c
