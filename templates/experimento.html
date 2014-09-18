@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block extra_css %}
+
+{% endblock %}
+
+{% block menu %}
+<li><a href="/">Home</a></li>
+<li class="active"><a href="#" data-toggle="modal" data-target="#modal-form-entrada-dados">Executar experimento</a></li>
+<li><a href="https://bitbucket.org/robertsonweb/analisecombinatoriapythonpermutacao" target="_blank">Código fonte</a></li>
+{% endblock %}
+
+{% block content %}
+<h3>
+	Permutação de:
+	{{ qtd_amarelas }} x <img src="/static/img/Amarelo.png"> +
+	{{ qtd_vermelhas }} x <img src="/static/img/Vermelho.png"> + 
+	{{ qtd_verdes }} x <img src="/static/img/Verde.png"> +
+	{{ qtd_azuis }} x <img src="/static/img/Azul.png"> = {{ total_bolas }} bolas
+</h3>
+<div>
+	Resolvendo matematicamente: ({{ total_bolas }})!
+	{% if qtd_amarelas > 1 or qtd_vermelhas > 1 or qtd_verdes > 1 or qtd_azuis > 1 %}
+		/ ({{qtd_amarelas}})! . ({{qtd_vermelhas}})! . ({{qtd_verdes}})! . ({{qtd_azuis}})!
+	{% endif %}
+	= {{ total_tubos }}
+</div>
+<h4>{{ total_tubos }} maneiras distintas de ordernar as bolas dentro de um tubo acrílico</h4>
+<ul>
+{% for tubo in tubos %}
+	<lo class="tubo-translucido" style="float:left;" title="{{ loop.index }}ª Maneira de ordenar as {{ total_bolas }} bolas no Tubo  [{% for item in tubo %} {{ item.replace('.png','') }} {% if not item == tubo|last %}, {% endif %} {% endfor %} ]">
+	{% for item in tubo %}
+		<img src="/static/img/{{ item }}">
+	{% endfor %}
+	</lo>
+{% endfor %}
+</ul>
+{% endblock %}

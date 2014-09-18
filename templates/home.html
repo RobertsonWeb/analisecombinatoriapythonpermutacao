@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block menu %}
+<li class="active"><a href="/">Home</a></li>
+<li><a href="#" data-toggle="modal" data-target="#modal-form-entrada-dados">Executar experimento</a></li>
+<li><a href="https://bitbucket.org/robertsonweb/analisecombinatoriapythonpermutacao" target="_blank">Código fonte</a></li>
+{% endblock %}
+
+{% block content %}
+<br>
+<h1 class="cover-heading">Análise Combinatória - Permutação</h1>
+<br>
+<div class="lead">
+	<h4>Coleção de bolas de tênis coloridas:</h4>
+	<div class="row">
+        <div class="col-md-5 thumbnail">
+			<span>
+				<img src="/static/img/Amarelo.png"><br>
+				<img src="/static/img/Vermelho.png"><br>
+				<img src="/static/img/Azul.png"><br>
+				<img src="/static/img/Verde.png">
+			</span>
+		</div>
+
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-5 thumbnail">
+			<center>
+				<div class="tubo-translucido">
+					T<br>
+					U<br>
+					B<br>
+					O
+				</div>
+			</center>
+		</div>
+	</div>
+</div>
+<h2>Objetivo</h2>
+<p>
+	Informando a quantidade de cada cor de bola, pretendendo colocá-las em um tubo acrílico translúcido e incolor, onde elas ficarão umas sobre as outras na vertical. De quantas maneiras distintas podemos formas esta coluna de bolas?
+</p>
+<p class="lead">
+	<br>
+  <a href="#" class="btn btn-lg btn-default" data-toggle="modal" data-target="#modal-form-entrada-dados"><span class="glyphicon glyphicon-play-circle"></span> Iniciar</a>
+</p>
+{% endblock %}

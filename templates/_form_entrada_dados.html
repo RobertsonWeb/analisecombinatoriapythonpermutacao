@@ -1,0 +1,64 @@
+<!-- Modal -->
+<div class="modal fade" id="modal-form-entrada-dados" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel" style="color:#000000;">Entre com a quantidade de cada cor de bola</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form" class="form">
+          <div class="alert alert-error">
+            <p id="texto-alerta"></p>
+          </div>
+
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-3">
+                <label class="control-label"><img src="/static/img/Amarelo.png"> Amarelas</label>
+                <select class="form-control" id="id_amarelo" name="amarelo" required="required" title="">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <div class="col-md-3">
+                <label class="control-label"><img src="/static/img/Vermelho.png"> Vermelhas</label>
+                <select class="form-control" id="id_vermelho" name="vermelho" required="required" title="">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <div class="col-md-3">
+                <label class="control-label"><img src="/static/img/Azul.png"> Azuis</label>
+                <select class="form-control" id="id_azul" name="azul" required="required" title="">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <div class="col-md-3">
+                <label class="control-label"><img src="/static/img/Verde.png"> Verdes</label>
+                <select class="form-control" id="id_verde" name="verde" required="required" title="">
+                  <option value="1">1</option>                  
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <center>
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Desisto</button>
+          <button type="button" class="btn btn-success btn-processar" data-loading-text="Aguarde, estou processando..."><span class="glyphicon glyphicon-play-circle"></span> Processar</button>
+        </center>
+      </div>
+    </div>
+  </div>
+</div>
