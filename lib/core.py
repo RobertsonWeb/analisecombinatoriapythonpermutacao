@@ -20,8 +20,7 @@ def processar(qtd_amarelas, qtd_vermelhas, qtd_azuis, qtd_verdes):
 	for a in itertools.permutations(colecao_bolas):
 	    tubos.append(a)
 
-	tubos = tubos[0:len(tubos)/2]
-
 	total_tubos = len(tubos)
 
+	#retorno
 	return total_bolas, total_tubos, tubos
