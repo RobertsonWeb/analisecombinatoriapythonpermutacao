@@ -8,6 +8,7 @@ Informando a quantidade de cada cor de bola, pretendendo colocá-las em um tubo 
 
 Acad. Robertson Ebling dos Santos (Sistemas de Informação) Prof. Leonardo Dallaporta (Matemática)
 Centro Universitário Franciscano - Santa Maria - RS - Setembro/2014
+
 Tecnologias utilizadas: Python 2.7 , Flask 0.10, Bootstrap 3.2.0 
 Cover template Bootstrap, por @mdo.
 
