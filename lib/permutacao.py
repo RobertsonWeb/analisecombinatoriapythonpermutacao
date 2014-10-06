@@ -18,7 +18,7 @@ def processar(qtd_amarelas, qtd_vermelhas, qtd_azuis, qtd_verdes):
 	total_bolas = len(colecao_bolas)
 
 	#permutacao das bolas "fisicas" com auxilio da biblioteca ittertools
-	tubos = list(set(itertools.permutations(colecao_bolas)))
+	tubos = sorted(list(set(itertools.permutations(colecao_bolas))))
 	total_tubos = len(tubos)
 
 	return total_bolas, total_tubos, tubos
