@@ -1,7 +1,7 @@
 # coding: utf-8
 import os
 from flask import Flask, render_template, json, Response
-from lib.core import processar
+from lib.permutacao import processar
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 app = Flask(__name__)

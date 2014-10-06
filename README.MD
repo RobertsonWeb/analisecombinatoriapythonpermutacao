@@ -12,6 +12,8 @@ Centro Universitário Franciscano - Santa Maria - RS - Setembro/2014
 Tecnologias utilizadas: Python 2.7 , Flask 0.10, Bootstrap 3.2.0 
 Cover template Bootstrap, por @mdo.
 
+Para trabalhar com permutação, utilizei o **permutations** da biblioteca **itertools** (http://pythonarticles.com/itertools.html).
+
 ## Como instalar?
 
 ```shell
